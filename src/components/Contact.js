@@ -90,7 +90,7 @@ const ContactPage = () => {
                 <h3>Social</h3>
                 <ul>
                   <li><a href="https://www.linkedin.com/in/john-mamuda-280524277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
-                  <li><a href="#">GitHub</a></li>
+                  <li><a href="https://github.com/Jay-Jay3/git-course">GitHub</a></li>
                 </ul>
               </div>
             </div>
