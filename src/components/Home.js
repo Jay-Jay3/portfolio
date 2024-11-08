@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
-  const titles = [
+  const titles = useMemo(() => [
     "Software Engineer",
     "Web Developer",
     "Tech Enthusiast",
     "Lifelong Learner",
     "Project Manager"
-  ];
+  ], []);
 
   const [currentTitle, setCurrentTitle] = useState('');
   const [titleIndex, setTitleIndex] = useState(0);
@@ -17,9 +17,7 @@ const Home = () => {
 
   useEffect(() => {
     const typeTimeout = setTimeout(() => {
-      setCurrentTitle((value) =>
-        value + titles[titleIndex].charAt(charIndex)
-      );
+      setCurrentTitle((value) => value + titles[titleIndex].charAt(charIndex));
       setCharIndex(charIndex + 1);
     }, 100);
 
