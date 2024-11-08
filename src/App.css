@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* NavBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  color: #fff;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.links a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Home.css */
+.home {
+  padding: 2rem;
+}
+
+.home h2 {
+  font-size: 2rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+}
+
+/* Add similar styling for About.css, Projects.css, and Contact.css */
+

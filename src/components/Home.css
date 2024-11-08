@@ -1,0 +1,163 @@
+/* src/components/Home.css */
+
+/* src/components/Home.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    color: #333;
+    text-align: center;
+    padding: 0 20px;
+    animation: background-fade 3s ease-in-out infinite alternate;
+  }
+  
+  .hero {
+    max-width: 800px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slide-up 1s ease-in-out;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+    animation: slide-in 1.5s ease-in-out;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    animation: bounce-in 1.8s ease-in-out;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes background-fade {
+    0% { background-color: #a1c4fd; }
+    100% { background-color: #c2e9fb; }
+  }
+  
+  @keyframes slide-up {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slide-in {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes bounce-in {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 30px 20px;
+    }
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+    .hero p {
+      font-size: 0.9rem;
+    }
+    .buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+
+.dynamic-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .dynamic-title {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dynamic-title {
+      font-size: 1rem;
+    }
+  }
+  
+  body {
+    padding-top: 60px; /* Adjust this value based on your navbar height */
+  }
+  
